@@ -10,7 +10,7 @@ const Posts = ({ setCurrentId }) => {
   const classes = useStyles();
 
   return (
-      // if post length == 0 -> then render circularProgress, if not, render the following:
+    // if post length == 0 -> then render circularProgress, if not, render the following:
     !posts.length ? <CircularProgress /> : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
         {posts.map((post) => (
